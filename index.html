@@ -20,21 +20,24 @@
               Contact Us
             </h1>
           </header>
-          <form action="#">
+          <form action="#" id="form">
             <div class="name">
               <div class="first">
                 <label for="first_name" id="first">First Name <span id="req">*</span> </label>
-                <input type="text" required>
+                <input type="text" id="first_name">
+                <p class="error"></p>
               </div>
               <div class="last">
                 <label for="last_name" id="last">Last Name <span id="req">*</span> </label>
-                <input type="text" required>
+                <input type="text" id="last_name">
+                <p class="error"></p>
               </div>
             </div>
             <!-- Email -->
             <div class="email">
               <label for="email">Email Address <span id="req">*</span></label>
-              <input type="email" required>
+              <input type="text" id="email">
+              <p class="error"></p>
             </div>
             <!-- Query -->
             <div class="query">
@@ -49,19 +52,23 @@
                   <label for="support-request">Support Request</label>
                 </div>
               </div>
+              <p class="error"></p>
+              
             </div>
             <!-- Message -->
             <div class="message">
               <label for="message">Message <span id="req">*</span></label>
-              <textarea type="text" id="message-input" required></textarea>
+              <textarea type="text" id="message-input"></textarea>
+              <p class="error"></p>
             </div>
             <!-- Terms -->
             <div class="terms">
-              <input type="checkbox" required>
+              <input type="checkbox" id="terms">
               <label>I consent to being contacted by the team <span id="req">*</span></label>
             </div>
+            <p class="error"></p>
             <!-- Submit -->
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
           </form>
         </div>
           <!-- FOOTER  -->
