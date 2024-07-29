@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link rel="stylesheet" href="style.css">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Contact form</title>
+    </head>
+    <body>
+        <div class="container">
+          <header>
+            <h1>
+              Contact Us
+            </h1>
+          </header>
+          <form action="#">
+            <div class="name">
+              <div class="first">
+                <label for="first_name" id="first">First Name <span id="req">*</span> </label>
+                <input type="text" required>
+              </div>
+              <div class="last">
+                <label for="last_name" id="last">Last Name <span id="req">*</span> </label>
+                <input type="text" required>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="email">
+              <label for="email">Email Address <span id="req">*</span></label>
+              <input type="email" required>
+            </div>
+            <!-- Query -->
+            <div class="query">
+              <label for="query" id="query">Query Type <span id="req">*</span></label>
+              <div class="query-items">
+                <div class="general-enquiry">
+                  <input type="radio" name="query" id="general">
+                  <label for="general-enquiry">General Enquiry</label>
+                </div>
+                <div class="support-request">
+                  <input type="radio" name="query" id="support">
+                  <label for="support-request">Support Request</label>
+                </div>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <label for="message">Message <span id="req">*</span></label>
+              <textarea type="text" id="message-input" required></textarea>
+            </div>
+            <!-- Terms -->
+            <div class="terms">
+              <input type="checkbox" required>
+              <label>I consent to being contacted by the team <span id="req">*</span></label>
+            </div>
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+          <!-- FOOTER  -->
+        <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
